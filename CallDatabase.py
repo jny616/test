@@ -47,160 +47,160 @@ def database_search(user):
     conn.close()
     
     return message
-    flex_message = FlexSendMessage(
-        alt_text='過去紀錄',
-        contents={
-                    "type": "carousel",
-                    "contents": [
-                        {
-                        "type": "bubble",
-                        "size": "nano",
-                        "header": {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
+flex_message = FlexSendMessage(
+            alt_text='過去紀錄',
+            contents={
+                        "type": "carousel",
+                        "contents": [
                             {
-                                "type": "text",
-                                "text": "日期："+ message[0]
-                                "color": "#ffffff",
-                                "align": "start",
-                                "size": "md",
-                                "gravity": "center"
-                            }
-                            ],
-                            "backgroundColor": "#27ACB2",
-                            "paddingTop": "19px",
-                            "paddingAll": "12px",
-                            "paddingBottom": "16px"
-                        },
-                        "body": {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                            {
+                            "type": "bubble",
+                            "size": "nano",
+                            "header": {
                                 "type": "box",
-                                "layout": "horizontal",
+                                "layout": "vertical",
                                 "contents": [
                                 {
                                     "type": "text",
-                                    "text": "身體狀況："+ message[1]
-                                    "color": "#8C8C8C",
-                                    "size": "sm",
-                                    "wrap": True
+                                    "text": "日期："+ message[0]
+                                    "color": "#ffffff",
+                                    "align": "start",
+                                    "size": "md",
+                                    "gravity": "center"
                                 }
                                 ],
-                                "flex": 1
-                            }
-                            ],
-                            "spacing": "md",
-                            "paddingAll": "12px"
-                        },
-                        "styles": {
-                            "footer": {
-                            "separator": False
-                            }
-                        }
-                        },
-                        {
-                        "type": "bubble",
-                        "size": "nano",
-                        "header": {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                            {
-                                "type": "text",
-                                "text": "日期："+ message[2]
-                                "color": "#ffffff",
-                                "align": "start",
-                                "size": "md",
-                                "gravity": "center"
-                            }
-                            ],
-                            "backgroundColor": "#FF6B6E",
-                            "paddingTop": "19px",
-                            "paddingAll": "12px",
-                            "paddingBottom": "16px"
-                        },
-                        "body": {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                            {
+                                "backgroundColor": "#27ACB2",
+                                "paddingTop": "19px",
+                                "paddingAll": "12px",
+                                "paddingBottom": "16px"
+                            },
+                            "body": {
                                 "type": "box",
-                                "layout": "horizontal",
+                                "layout": "vertical",
+                                "contents": [
+                                {
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "身體狀況："+ message[1]
+                                        "color": "#8C8C8C",
+                                        "size": "sm",
+                                        "wrap": True
+                                    }
+                                    ],
+                                    "flex": 1
+                                }
+                                ],
+                                "spacing": "md",
+                                "paddingAll": "12px"
+                            },
+                            "styles": {
+                                "footer": {
+                                "separator": False
+                                }
+                            }
+                            },
+                            {
+                            "type": "bubble",
+                            "size": "nano",
+                            "header": {
+                                "type": "box",
+                                "layout": "vertical",
                                 "contents": [
                                 {
                                     "type": "text",
-                                    "text": "身體狀況："+ message[3]
-                                    "color": "#8C8C8C",
-                                    "size": "sm",
-                                    "wrap": True
+                                    "text": "日期："+ message[2]
+                                    "color": "#ffffff",
+                                    "align": "start",
+                                    "size": "md",
+                                    "gravity": "center"
                                 }
                                 ],
-                                "flex": 1
-                            }
-                            ],
-                            "spacing": "md",
-                            "paddingAll": "12px"
-                        },
-                        "styles": {
-                            "footer": {
-                            "separator": False
-                            }
-                        }
-                        },
-                        {
-                        "type": "bubble",
-                        "size": "nano",
-                        "header": {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                            {
-                                "type": "text",
-                                "text": "日期："+ message[4]
-                                "color": "#ffffff",
-                                "align": "start",
-                                "size": "md",
-                                "gravity": "center"
-                            }
-                            ],
-                            "backgroundColor": "#A17DF5",
-                            "paddingTop": "19px",
-                            "paddingAll": "12px",
-                            "paddingBottom": "16px"
-                        },
-                        "body": {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                            {
+                                "backgroundColor": "#FF6B6E",
+                                "paddingTop": "19px",
+                                "paddingAll": "12px",
+                                "paddingBottom": "16px"
+                            },
+                            "body": {
                                 "type": "box",
-                                "layout": "horizontal",
+                                "layout": "vertical",
+                                "contents": [
+                                {
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "身體狀況："+ message[3]
+                                        "color": "#8C8C8C",
+                                        "size": "sm",
+                                        "wrap": True
+                                    }
+                                    ],
+                                    "flex": 1
+                                }
+                                ],
+                                "spacing": "md",
+                                "paddingAll": "12px"
+                            },
+                            "styles": {
+                                "footer": {
+                                "separator": False
+                                }
+                            }
+                            },
+                            {
+                            "type": "bubble",
+                            "size": "nano",
+                            "header": {
+                                "type": "box",
+                                "layout": "vertical",
                                 "contents": [
                                 {
                                     "type": "text",
-                                    "text": "身體狀況："+message[5]
-                                    "color": "#8C8C8C",
-                                    "size": "sm",
-                                    "wrap": True
+                                    "text": "日期："+ message[4]
+                                    "color": "#ffffff",
+                                    "align": "start",
+                                    "size": "md",
+                                    "gravity": "center"
                                 }
                                 ],
-                                "flex": 1
+                                "backgroundColor": "#A17DF5",
+                                "paddingTop": "19px",
+                                "paddingAll": "12px",
+                                "paddingBottom": "16px"
+                            },
+                            "body": {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                {
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "身體狀況："+message[5]
+                                        "color": "#8C8C8C",
+                                        "size": "sm",
+                                        "wrap": True
+                                    }
+                                    ],
+                                    "flex": 1
+                                }
+                                ],
+                                "spacing": "md",
+                                "paddingAll": "12px"
+                            },
+                            "styles": {
+                                "footer": {
+                                "separator": False
+                                }
                             }
-                            ],
-                            "spacing": "md",
-                            "paddingAll": "12px"
-                        },
-                        "styles": {
-                            "footer": {
-                            "separator": False
                             }
+                        ]
                         }
-                        }
-                    ]
-                    }
-    )
-    line_bot_api.reply_message(event.reply_token, flex_message)
+        )
+        line_bot_api.reply_message(event.reply_token, flex_message)
 
