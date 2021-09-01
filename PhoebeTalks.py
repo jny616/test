@@ -92,9 +92,12 @@ def find_record_data(event):
         try:
             user = utils.find_userid(event.message.text) 
             message = Calldatabase.database_search(user)
-            
-            line_bot_api.reply_message(event.reply_token, flex_message)
+            line_bot_api.reply_message(
+                event.reply_token,
+                TextSendMessage(text=message)
             )
+            line_bot_api.reply_message(event.reply_token, flex_message)
+            
         except:
             line_bot_api.reply_message(
                 event.reply_token,
