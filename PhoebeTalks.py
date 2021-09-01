@@ -91,7 +91,7 @@ def find_record_data(event):
     if '查詢紀錄:' in event.message.text:
         try:
             user = utils.find_userid(event.message.text) 
-            message = main.database_search(user)
+            message = Calldatabase.database_search(user)
             
             line_bot_api.reply_message(event.reply_token, flex_message)
             )
